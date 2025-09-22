@@ -16,12 +16,10 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        /* Custom style for the ZION logo */
         .logo-text {
             font-family: 'Outfit', sans-serif;
-            letter-spacing: 0px; /* Adjusted letter spacing to be less condensed */
+            letter-spacing: 0px;
         }
-        /* Custom animation for fade-in-up */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -37,13 +35,12 @@
         }
         .delay-200 { animation-delay: 0.2s; }
         .delay-400 { animation-delay: 0.4s; }
-        /* Ensure sections take full height for better visual separation on navigation */
         section {
-            min-height: calc(100vh - 64px); /* Approx. viewport height minus header height */
+            min-height: calc(100vh - 64px);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-top: 64px; /* Account for fixed header */
+            padding-top: 64px;
             padding-bottom: 64px;
         }
         .hidden {
@@ -69,226 +66,356 @@
         </div>
     </header>
 
-    <!-- Hero Section (Home Page) -->
-    <section id="home" class="bg-black text-white py-20 md:py-32 rounded-b-lg shadow-lg flex items-center justify-center min-h-screen pt-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
-                Making Rides <span class="text-green-400">Effortless</span> and <span class="text-green-400">Affordable</span>
-            </h1>
-            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
-                Affordable rides for customers, Increased income for drivers.
-            </p>
-        </div>
-    </section>
+    <!-- Home Page Sections Container -->
+    <div id="home-page-container">
+        <!-- Hero Section -->
+        <section id="home" class="bg-black text-white py-20 md:py-32 rounded-b-lg shadow-lg flex items-center justify-center min-h-screen pt-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    Making Rides <span class="text-green-400">Effortless</span> and <span class="text-green-400">Affordable</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in-up delay-200">
+                    Affordable rides for customers, Increased income for drivers.
+                </p>
+            </div>
+        </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-4 md:py-8 bg-black flex items-center justify-center pt-20">
-        <div class="container mx-auto px-4 text-center max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">About Us</h2>
-            <p class="text-lg text-gray-300 leading-relaxed mb-4">
-                Zion is a new gen Ride hailing application that aims to provide quick and affordable Rides for consumers by leveraging in-vehicle advertising.
-            </p>
-            <p class="text-lg text-gray-300 leading-relaxed mb-4">
-                We revolutionize the ride-hailing industry by creating a sustainable ecosystem where ad revenue directly reduces ride costs, benefiting riders, drivers, and advertisers alike.
-            </p>
-            <p class="text-lg text-gray-300 leading-relaxed">
-                Our innovative approach ensures transparent pricing, better earnings for drivers, and cost-effective advertising solutions for brands seeking engaged audiences.
-            </p>
-        </div>
-    </section>
+        <!-- About Us Section -->
+        <section id="about" class="py-4 md:py-8 bg-black flex items-center justify-center pt-20">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">About Us</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                    Zion is a new gen Ride hailing application that aims to provide quick and affordable Rides for consumers by leveraging in-vehicle advertising.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                    We revolutionize the ride-hailing industry by creating a sustainable ecosystem where ad revenue directly reduces ride costs, benefiting riders, drivers, and advertisers alike.
+                </p>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Our innovative approach ensures transparent pricing, better earnings for drivers, and cost-effective advertising solutions for brands seeking engaged audiences.
+                </p>
+            </div>
+        </section>
 
-    <!-- Our Services Section -->
-    <section id="services" class="py-16 md:py-24 bg-black flex items-center justify-center min-h-screen pt-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-400">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-                <!-- Service 1: Auto -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 border border-gray-700">
-                    <div class="mb-4 text-center text-5xl">
-                        <!-- Emoji for Auto/Rickshaw -->
-                        🛺
+        <!-- Our Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-black flex items-center justify-center pt-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-400">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 border border-gray-700">
+                        <div class="mb-4 text-center text-5xl">🛺</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white text-center">Auto</h3>
+                        <p class="text-gray-300 text-center">Quick & Affordable auto rides at your fingertips.</p>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-3 text-white text-center">Auto</h3>
-                    <p class="text-gray-300 text-center">
-                        Quick & Affordable auto rides at your fingertips.
-                    </p>
-                </div>
-                <!-- Service 2: Cab -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 border border-gray-700">
-                    <div class="mb-4 text-center text-5xl">
-                        <!-- Emoji for Taxi/Cab -->
-                        🚗
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 border border-gray-700">
+                        <div class="mb-4 text-center text-5xl">🚗</div>
+                        <h3 class="text-2xl font-semibold mb-3 text-white text-center">Cab</h3>
+                        <p class="text-gray-300 text-center">Comfortable and reliable cab services for all your travel needs.</p>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-3 text-white text-center">Cab</h3>
-                    <p class="text-gray-300 text-center">
-                        Comfortable and reliable cab services for all your travel needs.
-                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- What's in for you Section -->
-    <section id="benefits" class="py-16 md:py-24 bg-black flex items-center justify-center min-h-screen pt-20">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-400">What's in for you</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Riders Benefits -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
-                    <div class="text-green-400 mb-4 text-center">
-                        <i class="fas fa-users text-4xl"></i>
+        <!-- What's in for you Section -->
+        <section id="benefits" class="py-16 md:py-24 bg-black flex items-center justify-center pt-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-green-400">What's in for you</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
+                        <div class="text-green-400 mb-4 text-center"><i class="fas fa-users text-4xl"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-white text-center">Riders</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Get cheapest fares</li>
+                            <li>Enjoy fast pickups</li>
+                            <li>No surge pricing</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white text-center">Riders</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Get cheapest fares</li>
-                        <li>Enjoy fast pickups</li>
-                        <li>No surge pricing</li>
-                    </ul>
-                </div>
-                <!-- Drivers Benefits -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
-                    <div class="text-green-400 mb-4 text-center">
-                        <i class="fas fa-taxi text-4xl"></i>
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
+                        <div class="text-green-400 mb-4 text-center"><i class="fas fa-taxi text-4xl"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-white text-center">Drivers</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Fixed fee per trip</li>
+                            <li>Easy payouts</li>
+                            <li>Direct payment from customers</li>
+                            <li>Better earnings with incentives</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white text-center">Drivers</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Fixed fee per trip</li>
-                        <li>Easy payouts</li>
-                        <li>Direct payment from customers</li>
-                        <li>Better earnings with incentives</li>
-                    </ul>
-                </div>
-                <!-- Advertisers Benefits -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
-                    <div class="text-green-400 mb-4 text-center">
-                        <i class="fas fa-bullhorn text-4xl"></i>
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
+                        <div class="text-green-400 mb-4 text-center"><i class="fas fa-bullhorn text-4xl"></i></div>
+                        <h3 class="text-xl font-semibold mb-4 text-white text-center">Advertisers</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Captive audience</li>
+                            <li>Long exposure time</li>
+                            <li>Higher Brand Recall</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white text-center">Advertisers</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-2">
-                        <li>Captive audience</li>
-                        <li>Long exposure time</li>
-                        <li>Higher Brand Recall</li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Join Our Waitlist Page -->
-    <section id="waitlist" class="bg-black text-white py-16 md:py-24 hidden flex items-center justify-center min-h-screen pt-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-400">Join Our Waitlist</h2>
-            <p class="text-lg opacity-90 mb-10 max-w-3xl mx-auto">
-                Register with us and you'll be notified when we launch!
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <!-- Rider's Waitlist -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
-                    <div class="mb-4 text-center text-5xl">
-                        👥
+    <!-- Other Pages: Who Are We, Privacy Policy, Terms of Service, Waitlist, Contact -->
+    <div id="other-pages-container" class="hidden">
+
+        <!-- Who Are We -->
+        <section id="whoarewe" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 max-w-4xl text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">Who are we</h2>
+                <p class="text-lg text-gray-300 mb-4">At Zion, we’re reimagining ride-hailing for India.</p>
+                <p class="text-lg text-gray-300 mb-4">We believe getting from one place to another should be fast, affordable, and sustainable — not dependent on endless discounts that vanish overnight.</p>
+                <p class="text-lg text-gray-300 mb-4">Our platform is built to serve three communities together:</p>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Riders get the quickest rides at the lowest fares.</li>
+                    <li>Drivers earn more with fair commissions and an extra source of income.</li>
+                    <li>Brands reach a truly engaged audience through in-ride advertising.</li>
+                </ul>
+                <p class="text-lg text-gray-300 mb-4">Unlike traditional ride-hailing apps, Zion isn’t just about rides — it’s about building a model where everyone wins. By combining mobility with in-vehicle advertising, we’re creating a system that keeps fares low, drivers happy, and advertisers remembered.</p>
+                <p class="text-lg text-gray-300">We’re just getting started, but our mission is clear:</p>
+                <p class="text-lg text-gray-300 font-semibold mt-2">To make ride-hailing sustainable, engaging, and rewarding for everyone!</p>
+            </div>
+        </section>
+
+        <!-- Privacy Policy -->
+        <section id="privacypolicy" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 max-w-4xl text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">Privacy Policy</h2>
+                <p class="text-lg text-gray-300 mb-4">This Privacy Policy describes how Zion (a sole proprietorship owned by P. Mohith) collects, uses, and protects your information when you use our website, mobile application, and related services.</p>
+                <p class="text-lg text-gray-300 mb-4">By using Zion, you agree to the terms of this Privacy Policy.</p>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Information We Collect</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Personal Information – Name, phone number, email, profile photo.</li>
+                    <li>Ride Information – Pickup & drop locations, trip duration, payment method.</li>
+                    <li>Driver Information – Driving license, vehicle details, bank/payment info.</li>
+                    <li>Device Information – Device type, OS, app version, IP address.</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">How We Use Your Information</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Provide ride-hailing services and process payments.</li>
+                    <li>Connect riders with nearby drivers.</li>
+                    <li>Improve app performance and user experience.</li>
+                    <li>Send notifications, updates, and important service information.</li>
+                    <li>Comply with legal and regulatory requirements.</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Sharing Your Information</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Drivers and Riders (only essential trip-related info).</li>
+                    <li>Payment Providers (e.g., Razorpay) for processing payments.</li>
+                    <li>Government or law enforcement when legally required.</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Data Storage & Security</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Data is stored securely on Firebase (Google Cloud) and protected with industry-standard encryption.</li>
+                    <li>We take reasonable measures to prevent unauthorized access or misuse of your data.</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Your Rights</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Access and update your personal data.</li>
+                    <li>Request deletion of your account and data.</li>
+                    <li>Opt-out of non-essential communications.</li>
+                </ul>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Cookies & Tracking</h3>
+                <p class="text-lg text-gray-300 mb-4">Our website and app may use cookies or similar technologies to enhance user experience and improve services.</p>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Children’s Privacy</h3>
+                <p class="text-lg text-gray-300 mb-4">Zion is not directed to children under 18. We do not knowingly collect data from minors.</p>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Changes to This Policy</h3>
+                <p class="text-lg text-gray-300 mb-4">We may update this Privacy Policy from time to time. Updates will be posted on this page with a revised “Last Updated” date.</p>
+                <h3 class="text-xl font-semibold mb-2 text-green-400">Contact Us</h3>
+                <p class="text-lg text-gray-300 mb-2">Zion (Sole Proprietorship)</p>
+                <p class="text-lg text-gray-300 mb-2">Owner: P. Mohith</p>
+                <p class="text-lg text-gray-300 mb-2">📍 Hyderabad, Telangana, India</p>
+                <p class="text-lg text-gray-300 mb-2">📧 mohith.prathipati@gmail.com</p>
+                <p class="text-lg text-gray-300">📞 +91 83282 39064</p>
+            </div>
+        </section>
+
+        <!-- Terms of Service -->
+        <section id="termsofservice" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 max-w-4xl text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">Terms of Service</h2>
+                <p class="text-lg text-gray-300 mb-4">Last Updated: 22-9-25</p>
+                <p class="text-lg text-gray-300 mb-4">Welcome to Zion, a ride-hailing service operated as a sole proprietorship by P. Mohith (“Zion,” “we,” “our,” or “us”). By accessing or using the Zion mobile application, website, or services (collectively, the “Services”), you agree to be bound by these Terms of Service. If you do not agree, please do not use our Services.</p>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">1. Use of Services</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Zion connects riders with drivers for transportation services.</li>
+                    <li>You must be at least 18 years old to use the Services.</li>
+                    <li>You agree to provide accurate and up-to-date information when creating an account.</li>
+                    <li>Zion reserves the right to refuse or terminate service if terms are violated.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">2. User Accounts</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Riders and Drivers must register using a valid mobile number and/or email.</li>
+                    <li>You are responsible for maintaining the confidentiality of your account.</li>
+                    <li>Any activity under your account will be considered your responsibility.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">3. Payments</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>All payments are processed securely through Razorpay or other approved payment gateways.</li>
+                    <li>Fares are calculated based on trip details (distance, time, location).</li>
+                    <li>Drivers may receive payments directly to their linked bank accounts.</li>
+                    <li>By booking a ride, you authorize Zion to process the applicable fare.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">4. Driver Responsibilities</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Drivers must hold a valid driving license and provide correct vehicle information.</li>
+                    <li>Drivers must comply with traffic laws and ensure rider safety.</li>
+                    <li>Zion is not responsible for disputes between riders and drivers but may step in to mediate if required.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">5. Rider Responsibilities</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Riders must provide accurate pickup and drop-off details.</li>
+                    <li>Riders must treat drivers and vehicles respectfully.</li>
+                    <li>Cancellation fees may apply for last-minute cancellations.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">6. Limitations of Liability</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Zion is a technology platform connecting riders and drivers.</li>
+                    <li>We do not own vehicles or employ drivers. Drivers act as independent contractors.</li>
+                    <li>Zion is not liable for delays, accidents, personal injuries, or lost items during rides.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">7. Prohibited Activities</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Use Zion for unlawful or fraudulent purposes.</li>
+                    <li>Harass, harm, or exploit drivers or riders.</li>
+                    <li>Attempt to hack, reverse-engineer, or disrupt the Services.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">8. Data & Privacy</h3>
+                <p class="text-lg text-gray-300 mb-4">Your personal data is handled as per our Privacy Policy. By using our Services, you consent to our data practices.</p>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">9. Termination</h3>
+                <ul class="list-disc list-inside text-gray-300 mb-4 space-y-2">
+                    <li>Zion may suspend or terminate your account if you violate these Terms.</li>
+                    <li>You may delete your account at any time by contacting support.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">10. Changes to Terms</h3>
+                <p class="text-lg text-gray-300 mb-4">We may update these Terms of Service from time to time. Updates will be effective immediately when posted on the app or website.</p>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">11. Governing Law</h3>
+                <p class="text-lg text-gray-300 mb-4">These Terms are governed by the laws of India. Any disputes shall be subject to the jurisdiction of the courts in Hyderabad, Telangana.</p>
+
+                <h3 class="text-xl font-semibold mb-2 text-green-400">12. Contact Us</h3>
+                <p class="text-lg text-gray-300 mb-2">Zion (Sole Proprietorship)</p>
+                <p class="text-lg text-gray-300 mb-2">Owner: P. Mohith</p>
+                <p class="text-lg text-gray-300 mb-2">📍 Hyderabad, Telangana, India</p>
+                <p class="text-lg text-gray-300 mb-2">📧 mohith.prathipati@gmail.com</p>
+                <p class="text-lg text-gray-300">📞 +91 83282 39064</p>
+            </div>
+        </section>
+
+        <!-- Waitlist Section -->
+        <section id="waitlist" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-400">Join Our Waitlist</h2>
+                <p class="text-lg opacity-90 mb-10 max-w-3xl mx-auto">Register with us and you'll be notified when we launch!</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
+                        <div class="mb-4 text-center text-5xl">👥</div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Riders</h3>
+                        <a href="https://forms.gle/yHoYvuZsRF1sFu1i7" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">Join the Waitlist</a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white">Riders</h3>
-                    <a href="https://forms.gle/yHoYvuZsRF1sFu1i7" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
-                        Join the Waitlist
-                    </a>
-                </div>
-                <!-- Driver's Waitlist -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
-                    <div class="mb-4 text-center text-5xl">
-                        👨🏻‍✈️
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
+                        <div class="mb-4 text-center text-5xl">👨🏻‍✈️</div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Drivers</h3>
+                        <a href="https://forms.gle/JF6qzRuMrySRpmSn6" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">Join the Waitlist</a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white">Drivers</h3>
-                    <a href="https://forms.gle/JF6qzRuMrySRpmSn6" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
-                        Join the Waitlist
-                    </a>
-                </div>
-                <!-- Advertiser's Waitlist -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
-                    <div class="mb-4 text-center text-5xl">
-                        🔊
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700 flex flex-col items-center">
+                        <div class="mb-4 text-center text-5xl">🔊</div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Advertisers</h3>
+                        <a href="https://forms.gle/K9iXZXwqmtjYqhMt5" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">Join the Waitlist</a>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4 text-white">Advertisers</h3>
-                    <a href="https://forms.gle/K9iXZXwqmtjYqhMt5" target="_blank" class="bg-white text-black hover:bg-gray-200 font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 inline-block">
-                        Join the Waitlist
-                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact" class="bg-black text-white py-16 md:py-24 hidden flex items-center justify-center min-h-screen pt-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-400">Contact Us</h2>
-            <p class="text-lg opacity-90 mb-10 max-w-3xl mx-auto">
-                In order to contact us for enquiries/collaborations, you can write to us.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                <!-- Mohith Prathipati -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-white">Mohith Prathipati</h3>
-                    <p class="text-gray-300 mb-2">Co-founder, Zion</p>
-                    <p class="text-green-400 mb-2"><i class="fas fa-phone-alt mr-2"></i>+91 832 823 9064</p>
-                    <p class="text-green-400"><i class="fas fa-envelope mr-2"></i>mohith.prathipati@gmail.com</p>
-                </div>
-                <!-- Isreal Akkamolla -->
-                <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
-                    <h3 class="text-2xl font-bold mb-4 text-white">Isreal Akkamolla</h3>
-                    <p class="text-gray-300 mb-2">Co-founder, Zion</p>
-                    <p class="text-green-400 mb-2"><i class="fas fa-phone-alt mr-2"></i>+91 996 387 4424</p>
-                    <p class="text-green-400"><i class="fas fa-envelope mr-2"></i>a.isreal1903@gmail.com</p>
+        <!-- Contact Section -->
+        <section id="contact" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-400">Contact Us</h2>
+                <p class="text-lg opacity-90 mb-10 max-w-3xl mx-auto">In order to contact us for enquiries/collaborations, you can write to us.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Mohith Prathipati</h3>
+                        <p class="text-gray-300 mb-2">Co-founder, Zion</p>
+                        <p class="text-green-400 mb-2"><i class="fas fa-phone-alt mr-2"></i>+91 832 823 9064</p>
+                        <p class="text-green-400"><i class="fas fa-envelope mr-2"></i>mohith.prathipati@gmail.com</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg shadow-md border border-gray-700">
+                        <h3 class="text-2xl font-bold mb-4 text-white">Isreal Akkamolla</h3>
+                        <p class="text-gray-300 mb-2">Co-founder, Zion</p>
+                        <p class="text-green-400 mb-2"><i class="fas fa-phone-alt mr-2"></i>+91 996 387 4424</p>
+                        <p class="text-green-400"><i class="fas fa-envelope mr-2"></i>a.isreal1903@gmail.com</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer Section -->
+    </div>
+
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-8 rounded-t-lg">
         <div class="container mx-auto px-4 text-center text-sm">
             <p>&copy; 2024 Zion. All rights reserved.</p>
             <p class="mt-2">
-                <a href="#" class="hover:text-green-400 transition-colors">Privacy Policy</a> |
-                <a href="#" class="hover:text-green-400 transition-colors">Terms of Service</a>
+                <a href="#whoarewe" class="hover:text-green-400 transition-colors">Who are we</a> |
+                <a href="#privacypolicy" class="hover:text-green-400 transition-colors">Privacy Policy</a> |
+                <a href="#termsofservice" class="hover:text-green-400 transition-colors">Terms of Service</a>
             </p>
         </div>
     </footer>
 
+    <!-- JS for SPA Navigation -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navLinks = document.querySelectorAll('nav ul li a');
-            const sections = document.querySelectorAll('section[id]'); // Get all sections with an ID
+            const homePageContainer = document.getElementById('home-page-container');
+            const otherPagesContainer = document.getElementById('other-pages-container');
 
-            function showSection(targetId) {
-                sections.forEach(section => {
-                    // Define sections that are part of the 'Home' page scroll
-                    const homePageSections = ['home', 'about', 'services', 'benefits'];
-
-                    if (targetId === 'home') {
-                        // If 'Home' is clicked, show all home page sections and hide others
-                        if (homePageSections.includes(section.id)) {
-                            section.classList.remove('hidden');
-                        } else {
-                            section.classList.add('hidden');
-                        }
-                    } else if (section.id === targetId) {
-                        // If 'Waitlist' or 'Contact' is clicked, show only that section
-                        section.classList.remove('hidden');
-                    } else {
-                        // Hide all other sections
+            function showPage(targetId) {
+                if (targetId === 'home') {
+                    homePageContainer.classList.remove('hidden');
+                    otherPagesContainer.classList.add('hidden');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    homePageContainer.classList.add('hidden');
+                    otherPagesContainer.classList.remove('hidden');
+                    document.querySelectorAll('#other-pages-container section').forEach(section => {
                         section.classList.add('hidden');
-                    }
-                });
+                        if (section.id === targetId) section.classList.remove('hidden');
+                    });
+                    window.scrollTo({ top: document.getElementById(targetId).offsetTop - 64, behavior: 'smooth' });
+                }
             }
 
-            // Initial state: show all home page sections and hide others
-            showSection('home');
+            const initialHash = window.location.hash.substring(1);
+            if (initialHash && ['waitlist', 'contact', 'whoarewe', 'privacypolicy', 'termsofservice'].includes(initialHash)) {
+                showPage(initialHash);
+            } else {
+                showPage('home');
+            }
 
-            navLinks.forEach(link => {
+            [...navLinks, ...document.querySelectorAll('footer a[href^="#"]')].forEach(link => {
                 link.addEventListener('click', (event) => {
-                    event.preventDefault(); // Prevent default anchor link behavior
-                    const targetId = event.target.getAttribute('href').substring(1); // Get ID without '#'
-                    showSection(targetId);
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    history.pushState(null, '', '#' + targetId);
+                    showPage(targetId);
                 });
+            });
+
+            window.addEventListener('popstate', () => {
+                const currentHash = window.location.hash.substring(1);
+                if (currentHash && ['waitlist', 'contact', 'whoarewe', 'privacypolicy', 'termsofservice'].includes(currentHash)) {
+                    showPage(currentHash);
+                } else {
+                    showPage('home');
+                }
             });
         });
     </script>
