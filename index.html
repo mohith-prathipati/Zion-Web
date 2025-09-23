@@ -308,6 +308,47 @@
                 <p class="text-lg text-gray-300">📞 +91 99638 74424</p>
             </div>
         </section>
+        
+        <!-- Cancellations & Refunds -->
+        <section id="cancellation-refunds" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
+            <div class="container mx-auto px-4 max-w-4xl text-left">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-green-400">Cancellations & Refunds Policy</h2>
+                <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                    At Zion, we strive to provide our riders with a seamless and affordable travel experience. We understand that plans may change, and have outlined our Refund & Cancellation policy below:
+                </p>
+
+                <h3 class="text-xl font-semibold mb-2 mt-8 text-green-400">Ride Cancellations (Riders)</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
+                    <li>Riders may cancel a ride at any time before the driver has arrived at the pickup location.</li>
+                    <li>In certain cases, a nominal cancellation fee may be charged to compensate the driver for their time and effort.</li>
+                    <li>If the rider cancels within a short window (e.g., within 2 minutes of booking), no cancellation fee will be charged.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 mt-8 text-green-400">Ride Cancellations (Drivers)</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
+                    <li>Drivers are expected to honor accepted trips. Frequent cancellations may result in warnings, penalties, or suspension.</li>
+                    <li>If a driver cancels, riders will not be charged any cancellation fee.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 mt-8 text-green-400">Refunds</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
+                    <li>If a ride is not completed due to driver cancellation, technical issues, or other valid reasons, any amount paid in advance will be refunded to the rider’s original payment method.</li>
+                    <li>Refunds, if applicable, will typically be processed within 5–7 business days.</li>
+                    <li>No refunds will be issued once a ride has been completed.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mb-2 mt-8 text-green-400">Disputes</h3>
+                <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4">
+                    <li>In case of disputes related to fares, cancellations, or payments, riders may raise a ticket via the Help & Support section in the app.</li>
+                    <li>Each case will be reviewed by our team, and refunds will be provided where applicable.</li>
+                </ul>
+
+                <p class="text-lg font-semibold text-gray-300 mt-8">Note</p>
+                <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                    This policy may be updated from time to time. Riders and drivers are encouraged to review it regularly.
+                </p>
+            </div>
+        </section>
 
         <!-- Waitlist Section -->
         <section id="waitlist" class="bg-black text-white py-16 md:py-24 flex items-center justify-center min-h-screen pt-20 hidden">
@@ -365,7 +406,8 @@
             <p class="mt-2">
                 <a href="#whoarewe" class="hover:text-green-400 transition-colors">Who are we</a> |
                 <a href="#privacypolicy" class="hover:text-green-400 transition-colors">Privacy Policy</a> |
-                <a href="#termsofservice" class="hover:text-green-400 transition-colors">Terms of Service</a>
+                <a href="#termsofservice" class="hover:text-green-400 transition-colors">Terms of Service</a> |
+                <a href="#cancellation-refunds" class="hover:text-green-400 transition-colors">Cancellations & Refunds</a>
             </p>
         </div>
     </footer>
@@ -381,7 +423,7 @@
             function showPage(targetId) {
                 // Determine if the target is a multi-section page or a single section
                 const isHomePage = ['home', 'about', 'services', 'benefits'].includes(targetId);
-                const isOtherPage = ['waitlist', 'contact', 'whoarewe', 'privacypolicy', 'termsofservice'].includes(targetId);
+                const isOtherPage = ['waitlist', 'contact', 'whoarewe', 'privacypolicy', 'termsofservice', 'cancellation-refunds'].includes(targetId);
 
                 // Hide all sections first
                 allSections.forEach(section => {
